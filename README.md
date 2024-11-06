@@ -62,11 +62,11 @@ The system follows a modular design, using Django's app structure. Each app serv
 Each app follows the MVC (Model-View-Controller) design pattern, ensuring a clean separation of concerns.
 
 1. **Motor Policies**
-   - Models: `Policy`, `Vehicle`, `Coverage`
+   - Models: `Policy`, `Vehicle`, `Coverage`, `Premium`, `Sticker`
    - Views: Policy creation, renewal, management
    - Controllers: API endpoints for policy CRUD operations
 2. **Customers**
-   - Models: `Customer`, `Address`, `ContactInformation`
+   - Models: `ContactInformation`
    - Views: Customer profile management, customer search
    - Controllers: API for customer creation, update, and queries
 3. **Intermediaries/Agents**
@@ -74,7 +74,7 @@ Each app follows the MVC (Model-View-Controller) design pattern, ensuring a clea
    - Views: Agent management, commission tracking
    - Controllers: API for managing agent profiles and commission data
 4. **Endorsements**
-   - Models: `Endorsement`, `PolicyChange`
+   - Models: `Endorsement`
    - Views: Endorsement creation, modification tracking
    - Controllers: Endorsement management API
 5. **Commissions**
@@ -82,15 +82,15 @@ Each app follows the MVC (Model-View-Controller) design pattern, ensuring a clea
    - Views: Commission summary, payout schedule
    - Controllers: API for commission calculations and payouts
 6. **Claims**
-   - Models: `Claim`, `ClaimDetail`
+   - Models: `Claim`
    - Views: Claims management, status updates
    - Controllers: Claims processing API
 7. **Setups**
-   - Models: `Product`, `RiskType`, `AgencyType`
+   - Models: `Product`, `RiskType`, `AgencyType`, `Branches`, `Schedules`, `Tariffs`, `Discounts`, `VehicleBodyTypes`, `VehicleMakes`, `VehicleModel`
    - Views: Setup management pages (products, risks, etc.)
    - Controllers: API for adding and modifying system setups
 8. **Reports**
-   - Models: `Report`, `ReportType`
+   - Models: `PolicyStatement`, `ReportType`
    - Views: Report generation, export options
    - Controllers: API for generating policy and financial reports
 9. **Employees**
