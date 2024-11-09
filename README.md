@@ -1,5 +1,5 @@
 
-# Non-Life Insurance Management System Documentation
+# Non-Life Insurance Management System (insureSync) Documentation
 
 ---
 
