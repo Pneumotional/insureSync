@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Update</h2>
+    <div class="card shadow-sm p-4">
+        <form method="post">
+            {% csrf_token %}
+            <label for="id_username" class="form-label">Product Name</label>
+            {{form.name|add_class:"form-control" }}
+            <button type="submit" class="btn btn-primary mt-3">Update Product</button>
+        </form>
+{% endblock %}

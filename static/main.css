@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --first-color: #1A968E;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: "Montserrat", serif;
+    --z-fixed: 100;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav
+{
+    height: 40vh;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+}

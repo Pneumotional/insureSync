@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load custom_filters %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Add Vehicle Make</h2>
+    <div class="card shadow-sm p-4">
+        {% if form.errors %}
+                <div class="alert alert-danger">
+                    Make already exist
+                </div>
+            {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <label for="id_username" class="form-label">Name</label>
+            {{form.name|add_class:"form-control" }}
+            <button type="submit" class="btn btn-primary mt-3">Add Make</button>
+        </form>
+{% endblock %}

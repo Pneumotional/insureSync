@@ -3,7 +3,7 @@ from django.urls import reverse
 
 # Create your models here.
 class Product(models.Model):
-    name = models.CharField(max_length=50, blank=True, null=True)
+    name = models.CharField(max_length=50, null=False)
     
     class Meta:
         verbose_name = ("Product")

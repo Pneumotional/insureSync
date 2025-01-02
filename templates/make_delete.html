@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+   <h1>Are You sure you want to delete this Make? </h1>
+   <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger mt-3">Yes</button>
+</form>
+<a href="#" class="btn btn-primary mt-3">Go Back</a>
+</div>
+{% endblock %}
